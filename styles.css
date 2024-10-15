@@ -8,3 +8,7 @@
     flex: 1 0 calc(6.2% - 2px);
     border: 1px solid black;
 }
+
+.gridBox:hover {
+    background-color: black;
+}
