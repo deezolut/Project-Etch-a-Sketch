@@ -10,7 +10,9 @@ function changeGrid() {
             container.removeChild(container.firstElementChild);
         }    
     }
+
     catch {}
+
     finally {
         let userInput = +prompt('Enter an integer between 1 and 100');
         if (!Number.isInteger(userInput) || isNaN(userInput)) {
@@ -30,11 +32,19 @@ function changeGrid() {
                 let color = Math.floor(Math.random() * 255);
                 return color;
             }
+
+            function decreaseOpacity() {
+                let opacity = newDiv.style.opacity = 1;
+                opacity = opacity - 0.1;
+                return opacity;
+            }
             
-    
+            
             newDiv.addEventListener('mouseover', () => {
                 newDiv.style.background = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
+                newDiv.style.opacity = (parseFloat(newDiv.style.opacity) || 0) + 0.1;
             })
+        
             newDiv.style.flex = `1 1 calc(${num}% - 2px)`;
             container.appendChild(newDiv); 
         }

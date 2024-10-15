@@ -23,4 +23,5 @@ button {
     border: 1px solid black;
     min-height: 1px;
     min-width: 1px;
+    opacity: 0;
 }
