@@ -1,13 +1,26 @@
+body {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 50px;
+    margin: 0px auto;
+}
+
+button {
+    align-self: flex-start;
+    margin: 50px 0px 0px 10px;
+}
+
+
 #container {
     display: flex;
     flex-flow: row wrap;
+    height: 450px;
+    width: 450px;
 }
 
 .gridBox {
-    height: 40px;
     border: 1px solid black;
-}
-
-.gridBox:hover {
-    background-color: black;
+    min-height: 1px;
+    min-width: 1px;
 }
